@@ -1,5 +1,10 @@
 
 import * as React from 'react';
+import {
+  StyleSheet,
+  TextInput,
+  Button,
+  View} from 'react-native';
 function LogoutScreen({ navigation }) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -7,3 +12,4 @@ function LogoutScreen({ navigation }) {
       </View>
     );
   }
+  export default LogoutScreen;

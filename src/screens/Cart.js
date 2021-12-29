@@ -1,6 +1,10 @@
 
 import * as React from 'react';
-
+import {
+  StyleSheet,
+  TextInput,
+  Button,
+  View} from 'react-native';
 function CartScreen({ navigation }) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -8,3 +12,4 @@ function CartScreen({ navigation }) {
       </View>
     );
   }
+  export default CartScreen;

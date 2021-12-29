@@ -12,11 +12,6 @@ import {
 } from 'react-native';
 import {  Dimensions } from 'react-native';
 
-
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SectionList from 'react-native/Libraries/Lists/SectionList';
-
 const RegisterScreen = ({ navigation }) => {
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
@@ -69,7 +64,8 @@ const RegisterScreen = ({ navigation }) => {
       phone: userPhone,
       password: userPassword,
     };
-    navigation.navigate('Root', { screen: 'Cart' })};
+    setIsRegistraionSuccess(true);
+    };
   if (isRegistraionSuccess) {
     return (
       <View

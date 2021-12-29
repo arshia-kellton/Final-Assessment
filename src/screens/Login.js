@@ -12,8 +12,6 @@ import {
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import {  Dimensions } from 'react-native';
-
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
  const LoginScreen = ({ navigation }) => {
   const [userEmail, setUserEmail] = useState('');
   const [userPassword, setUserPassword] = useState('');
@@ -31,8 +29,8 @@ const handleSubmitPress = () => {
       alert('Please fill Password');
       return;
     }
-    let dataToSend = {email: userEmail, password: userPassword};
-   };
+    navigation.replace('DrawerNavigationRoutes');
+  };
 
   return (
     <View style={styles.mainBody}>
